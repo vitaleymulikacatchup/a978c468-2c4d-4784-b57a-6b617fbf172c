@@ -8,12 +8,13 @@ import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
 import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterBase from '@/components/sections/footer/FooterBase';
+import { Sparkles } from 'lucide-react';
 
 const assetMap: { id: string; url: string; alt?: string }[] = [
-  { "id": "hero-image", "url": "https://images.pexels.com/photos/19867468/pexels-photo-19867468.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Wooden letter tiles spelling SaaS on rustic wood. Ideal for cloud computing and business concepts." },
-  { "id": "features-image", "url": "https://images.pexels.com/photos/7679829/pexels-photo-7679829.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Man reviewing sneakers in-store captured on smartphone, showcasing footwear." },
-  { "id": "product-image", "url": "https://images.pexels.com/photos/8000536/pexels-photo-8000536.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Two colleagues collaborate on a project using laptops and large monitors in a modern office setting." },
-  { "id": "team-image", "url": "https://images.pexels.com/photos/3810753/pexels-photo-3810753.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "A diverse team of women brainstorming ideas in a modern office setting, fostering collaboration and creativity." }
+{ "id": "hero-image", "url": "https://images.pexels.com/photos/19867468/pexels-photo-19867468.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Wooden letter tiles spelling SaaS on rustic wood. Ideal for cloud computing and business concepts." },
+{ "id": "features-image", "url": "https://images.pexels.com/photos/7679829/pexels-photo-7679829.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Man reviewing sneakers in-store captured on smartphone, showcasing footwear." },
+{ "id": "product-image", "url": "https://images.pexels.com/photos/8000536/pexels-photo-8000536.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Two colleagues collaborate on a project using laptops and large monitors in a modern office setting." },
+{ "id": "team-image", "url": "https://images.pexels.com/photos/3810753/pexels-photo-3810753.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "A diverse team of women brainstorming ideas in a modern office setting, fostering collaboration and creativity." }
 ];
 
 export default function Home() {
@@ -78,7 +79,7 @@ export default function Home() {
           <PricingCardOne
             plans={[
               { id: "basic", badge: "Starter", price: "$19/mo", subtitle: "For solo creators", features: ["Unlimited projects", "Email support"] },
-              { id: "pro", badge: "Pro", price: "$49/mo", subtitle: "For teams", features: ["Everything in Starter", "Priority support"], badgeIcon: "asset://sparkles" }
+              { id: "pro", badge: "Pro", price: "$49/mo", subtitle: "For teams", features: ["Everything in Starter", "Priority support"], badgeIcon: Sparkles }
             ]}
             className="bg-blue-50"
             priceClassName="text-blue-900"
